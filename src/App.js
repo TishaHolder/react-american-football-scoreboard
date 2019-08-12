@@ -14,14 +14,14 @@ function App() {
   let [awayTigersScore, increaseAwayTigersScore] = useState(0);
 
   /****************STRETCH TASK ***********************/
-  function clickHandler (team, score) {
+  const clickHandler = ((team, score)  => {
     if(team === "Lions") {
       increaseHomeLionsScore(homeLionsScore += score);
     }
     if(team === "Tigers") {
       increaseAwayTigersScore(awayTigersScore += score);
     }
-  } 
+  });
 
   return (
 
